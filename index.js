@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 
-
+console.log(hello)
 // Iteration 2: Conditionals
 
 
