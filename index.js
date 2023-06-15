@@ -8,17 +8,23 @@ console.log(`"The navigator's name is ${hacker2}`);
 
 //Iteration 2:
 
-if (hacker1.length) {
+if (hacker1.length > hacker2.length) {
   console.log(`The driver has the longest name, it has ${hacker1.length}.`);
+} else if (hacker1.length < hacker2.length) {
+  console.log(`It seems that the navigator has the longest name, it has ${hacker2.length}.`);
 } else {
-  `Wow, you both have equally long names, ${hacker1.length}!`;
+  console.log(`Wow, you both have equally long names, ${hacker1.length}!`);
 }
 console.log(`${hacker1} ${hacker1.length}`);
 
 // Iteration 3.1:
 
-const letters = hacker1.split("");
-console.log(hacker1.toUpperCase().split("").join(" "));
+let capitalizedLetters = "";
+for (let i = 0; i < hacker1.length; i++) {
+  capitalizedLetters += hacker1[i].toUpperCase() + " ";
+}
+
+console.log(capitalizedLetters.trim());
 
 // 3.2
 
@@ -74,5 +80,4 @@ for (let i = 0; i < longText.length; i++) {
 console.log("total: ", total);
 
 // Bonus 2:
-
 
